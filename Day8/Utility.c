@@ -43,14 +43,14 @@ char** getFileContents(const char *path, int *numLines){
     return contents;
 }
 
-void free2DArray(char **arr, int numLines){
+void free2DArray(char** arr, int numLines){
     for(int i = 0; i < numLines; ++i){
         free(arr[i]);
     }
     free(arr);
 }
 
-void print2DArray(char **arr, int numLines){
+void print2DArray(char** arr, int numLines){
     for(int i = 0; i < numLines; ++i){
         printf("%s\n", arr[i]);
     }
